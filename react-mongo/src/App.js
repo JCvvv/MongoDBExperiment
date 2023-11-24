@@ -6,8 +6,6 @@ import MovieStatistics from './component/MovieStatistics';
 import './App.css';
 
 
-
-
 function App() {
     // ...状态定义...
     const [selectedYear, setSelectedYear] = useState(2000);
@@ -58,9 +56,7 @@ function App() {
 
     return (
         <div className='App'>
-            <div className='a'>
-                <MonthlyMovieBarChart />
-            </div>
+
             <div>
                 <MovieStatistics
                     average={stats.average}
@@ -69,16 +65,19 @@ function App() {
                     lowest={stats.lowest}
                 />
             </div>
-            <div className='b'>
+
+            <div className='Box'>
+            <div className='Chart1'>
+                <MonthlyMovieBarChart />
+            </div>
+            <div className='Chart2'>
                 <MovieChart year={selectedYear} data={chartData} />
                 <YearSlider minYear={2000} maxYear={2022} onYearChange={setSelectedYear} />
             </div>
+            </div>
+
         </div>
     );
 }
 
 export default App;
-
-
-
-
