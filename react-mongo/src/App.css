@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.a {
+  width: 600px;
+}
+
+.b {
+  width: 600px;
+}

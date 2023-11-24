@@ -1,0 +1,20 @@
+.movie-statistics-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.statistic {
+  text-align: center;
+}
+
+.rating {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Additional styling as needed */

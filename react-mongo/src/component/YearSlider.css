@@ -1,0 +1,34 @@
+.year-slider-container {
+  width: 600px;
+  position: relative;
+}
+
+.year-slider {
+  margin-left: 30px;
+  z-index: -1;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.year-labels {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 90%;
+  margin-left: 30px;
+  top: -20px; /* 调整标签位置 */
+}
+
+.year-label {
+  position: relative;
+  font-size: 10px;
+}
+
+.year-label.even {
+  top: 20px; /* 偶数年份标签向下 */
+}
+
+.year-label.odd {
+  top: 60px; /* 奇数年份标签向上 */
+}
