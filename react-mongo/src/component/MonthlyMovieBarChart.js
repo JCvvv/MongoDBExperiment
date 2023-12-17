@@ -63,7 +63,7 @@ const MonthlyMovieBarChart = () => {
         };
     }, []);
 
-    return <div ref={chartRef} className="MonthlyMovieBarChart" style={{ width: '600px', height: '400px' }}></div>;
+    return <div ref={chartRef} className="MonthlyMovieBarChart" style={{ width: '600px', height: '380px' }}></div>;
 };
 
 export default MonthlyMovieBarChart;

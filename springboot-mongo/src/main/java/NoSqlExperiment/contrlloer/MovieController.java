@@ -38,13 +38,7 @@ public class MovieController {
 
     @GetMapping("/averageRating")
     public Double getAverageRating() {
-        Double averageRating = movieService.getAverageRating();
-        if (averageRating != null) {
-            return BigDecimal.valueOf(averageRating)
-                    .setScale(2, RoundingMode.HALF_UP)
-                    .doubleValue();
-        }
-        return null;
+        return movieService.getAverageRating();
     }
 
     @GetMapping("/medianRating")
@@ -65,6 +59,21 @@ public class MovieController {
     @GetMapping("/countByMonth/{year}")
     public List<Document> getMovieCountByMonthForYear(@PathVariable int year) {
         return movieService.getMovieCountByMonthForYear(year);
+    }
+
+    @GetMapping("/topDirectors")
+    public List<Document> getTop20Directors() {
+        return movieService.getTop20DirectorsWithHighestRatedMovies();
+    }
+
+    @GetMapping("/topActors")
+    public List<Document> getTop20Actors() {
+        return movieService.getTop20ActorsWithHighestRatedMovies();
+    }
+
+    @GetMapping("/highRated")
+    public List<Document> getHighRatedMovies() {
+        return movieService.getHighRatedMovies();
     }
 }
 

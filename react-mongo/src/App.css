@@ -7,6 +7,14 @@
 }
 
 .Box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Box2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,9 +22,25 @@
 }
 
 .Chart1 {
+  margin-right: 50px;
   width: 600px;
 }
 
 .Chart2 {
+  margin-left: 50px;
   width: 600px;
+}
+
+.Chart3 {
+  width: 600px;
+  margin-right: 50px;
+}
+
+.Chart4 {
+  width: 600px;
+  margin-left: 50px;
+}
+
+.title {
+  margin-bottom: -10px;
 }

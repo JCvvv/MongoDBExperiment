@@ -84,7 +84,7 @@ const MovieChart = ({ year, data }) => {
         };
     }, [year, data]);
 
-    return <div ref={chartRef} className="chart-container" style={{ width: '600px', height: '350px'}}></div>;
+    return <div ref={chartRef} className="chart-container" style={{ width: '600px', height: '320px'}}></div>;
 
 };
 
